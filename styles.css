@@ -1,3 +1,20 @@
+:root{
+    --Soft-red: hsl(10, 79%, 65%);
+    --Cyan: hsl(186, 34%, 60%);
+    --Dark-brown: hsl(25, 47%, 15%);
+    --Medium-brown: hsl(28, 10%, 53%);
+    --Cream: hsl(27, 66%, 92%);
+    --Very-pale-orange: hsl(33, 100%, 98%);
+}
+
+
+*{
+    box-sizing: border-box;
+    color:white;
+    margin:0px;
+}
+
+
 body{
     height:100vh;
     width:100vw;
@@ -5,5 +22,37 @@ body{
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background-color: hsl(27, 66%, 92%);
+    background-color: var(--Cream);
+    gap:10px;
+}
+
+
+.main__balance{
+    background-color: var(--Soft-red);
+    border-radius: 10px;
+    width: 400px;
+    padding: 30px;
+}
+
+.main__flex-space{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main__balance-text{
+    
+}
+
+
+
+
+.main__chart{
+    background-color: var(--Very-pale-orange);
+    width: 400px;
+    border-radius: 10px;
+    padding:30px;
+}
+.main__chart h2{
+    color: var(--Dark-brown);
+    
 }
