@@ -1,0 +1,19 @@
+{
+  "name": "expenses-chart-component-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Expenses chart component coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "commit": "git add . && git commit -m 'x' && git push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josepabellana/ExpensesCard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josepabellana/ExpensesCard/issues"
+  },
+  "homepage": "https://github.com/josepabellana/ExpensesCard#readme"
+}
