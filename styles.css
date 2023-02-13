@@ -56,13 +56,23 @@ body{
     flex-direction: column;
 }
 #chart{
-    display: flex;
-
+    display: grid;
+    
+    grid-template-columns: repeat(7, 2fr);
+    gap: 4px;
+}
+.chart p{
+    color: var(--Medium-brown)
 }
 .column{
+    cursor: pointer;
     background-color: var(--Soft-red);
     width:35px;
     border-radius: 5px;
+    align-self: flex-end;
+}
+.column:hover{
+    background-color: var(--Cyan);
 }
 .main__chart h2{
     color: var(--Dark-brown);
