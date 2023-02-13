@@ -13,6 +13,7 @@ var chart = document.getElementById('chart');
     }
     for(let i = 0;i<data.length;i++){
         let text = document.createElement('p');
+        text.classList.add('textColumn')
         text.textContent = `${data[i].day}`;
         chart.append(text);
     }
