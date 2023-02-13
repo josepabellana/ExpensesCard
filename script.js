@@ -1,4 +1,11 @@
-const data = require('./data.json');
+
+
+
 var chart = document.getElementById('chart');
 
-console.log(data)
+(async ()=>{
+    const data = await fetch('./data.json').then(res => res.json());
+    for(let i = 0;i<data.length;i++){
+        
+    }
+})()
