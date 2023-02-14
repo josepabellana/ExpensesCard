@@ -1,11 +1,11 @@
 :root{
     --Soft-red: hsl(10, 79%, 65%);
     --Cyan: hsl(186, 34%, 60%);
+    --Light-Cyan: hsl(184, 44%, 79%);
     --Dark-brown: hsl(25, 47%, 15%);
     --Medium-brown: hsl(28, 10%, 53%);
     --Cream: hsl(27, 66%, 92%);
     --Very-pale-orange: hsl(33, 100%, 98%);
-
 
     --normal-size: 18px;
 
@@ -18,9 +18,12 @@
     box-sizing: border-box;
     color:white;
     margin:0px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'DM Sans', sans-serif;;
 }
-
+p{
+    font-size: var(--normal-size);
+    font-weight: var(--normal-weight);
+}
 .flex{
     display: flex;
     justify-content: space-between;
@@ -34,13 +37,13 @@ body{
     flex-direction: column;
     justify-content: center;
     background-color: var(--Cream);
-    gap:10px;
+    gap:20px;
 }
 
 
 .main__balance{
     background-color: var(--Soft-red);
-    border-radius: 10px;
+    border-radius: 17px;
     width: 400px;
     padding: 30px;
 }
@@ -48,8 +51,11 @@ body{
 .main__mybalance{
     
 }
-.main__balance-text{
-    
+.main__balance-text p{
+    margin-bottom: 10px;
+}
+.main__balance-text h2{
+    font-weight: var(--big-weight);
 }
 
 
@@ -58,7 +64,7 @@ body{
 .main__chart{
     background-color: var(--Very-pale-orange);
     width: 400px;
-    border-radius: 10px;
+    border-radius: 17px;
     padding:30px;
     display: flex;
     align-items: center;
@@ -66,9 +72,10 @@ body{
     gap:30px
 }
 #chart{
+    height: 140px;
     display: grid;
     grid-template-columns: repeat(7, 2fr);
-    gap: 13px;
+    gap: 10px;
 }
 .textColumn{
     color: var(--Medium-brown);
@@ -76,12 +83,18 @@ body{
 .column{
     cursor: pointer;
     background-color: var(--Soft-red);
-    width:35px;
+    width:40px;
     border-radius: 5px;
     align-self: flex-end;
 }
 .column:hover{
     background-color: var(--Cyan);
+}
+.todayCol{
+    background-color: var(--Cyan) !important;
+}
+.todayCol:hover{
+    background-color: var(--Light-Cyan) !important;
 }
 .main__chart h2{
     color: var(--Dark-brown);
@@ -100,11 +113,35 @@ body{
     width: 100%;
 }
 .main__chart-stats h1{
-    color: var(--Dark-brown)
+    color: var(--Dark-brown);
+    font-weight: var(--big-weight);
 }
 .main__chart-stats p{
     color:var(--Medium-brown)
 }
+.main__chart-right p:first-child {
+    text-align: right;
+}
 .attribution{
     color: var(--Soft-red)
 }
+.attribution a{
+    color:var(--Cyan)
+}
+
+
+@media screen and (max-width: 420px) {
+    .main__balance{ 
+      width:350px;
+    }
+    .main__chart{
+      width: 350px;
+      
+    }
+    #chart{
+        gap:10px;
+    }
+    .column{
+        width:33px;
+    }
+  }

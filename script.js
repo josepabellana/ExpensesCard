@@ -9,6 +9,13 @@ var chart = document.getElementById('chart');
         let div = document.createElement('div');
         div.classList.add('column')
         div.style.height = `${data[i]['amount']*2}px`;
+        let now = new Date();
+        now = now.toString().substring(0,3).toLowerCase();
+        console.log(now)
+        if(data[i]['day'] === now){
+            div.classList.add('todayCol')
+        }
+        await delay(300);
         chart.append(div);
     }
     for(let i = 0;i<data.length;i++){
@@ -19,3 +26,8 @@ var chart = document.getElementById('chart');
         chart.append(text);
     }
 })()
+
+
+async function delay(time){
+    return new Promise((res) => setInterval(res,time))
+}
