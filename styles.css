@@ -1,5 +1,6 @@
 :root{
     --Soft-red: hsl(10, 79%, 65%);
+    --Light-red: hsl(10, 59%, 76%);
     --Cyan: hsl(186, 34%, 60%);
     --Light-Cyan: hsl(184, 44%, 79%);
     --Dark-brown: hsl(25, 47%, 15%);
@@ -89,7 +90,7 @@ body{
     align-self: flex-end;
 }
 .column:hover{
-    background-color: var(--Cyan);
+    background-color: var(--Light-red);
 }
 .column:hover .columnData{
     display: flex;
@@ -103,17 +104,20 @@ body{
 .columnData{
     position: absolute;
     top:-30px;
-    left: -2px;
+    left: -8.5px;
     color: var(--Very-pale-orange);
     background-color: var(--Dark-brown);
     display: none;
     align-items: center;
     justify-content: center;
     height:25px;
-    width: 45px;
+    padding: 7px;;
+
     border-radius: 3px;
 }
-
+.columnData p{
+    font-size: 14px;;
+}
 .main__chart h2{
     color: var(--Dark-brown);
     font-weight: var(--big-weight);
@@ -161,5 +165,8 @@ body{
     }
     .column{
         width:33px;
+    }
+    .columnData p{
+        font-size: 11px;;
     }
   }

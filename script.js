@@ -12,7 +12,7 @@ var chart = document.getElementById('chart');
         let area = document.createElement('div');
         area.classList.add('columnData');
         let text = document.createElement('p');
-        text.textContent = `${data[i]['amount']}`;
+        text.textContent = `$${data[i]['amount']}`;
         area.append(text);
         div.append(area);
         let now = new Date();
