@@ -1,6 +1,6 @@
-# Frontend Mentor - Expenses chart component solution
+# Expenses chart component solution
 
-This is a solution to the [Expenses chart component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the a basic chart element and weekly balance using HTML + CSS + JS
 
 ## Table of contents
 
@@ -16,9 +16,6 @@ This is a solution to the [Expenses chart component challenge on Frontend Mentor
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
-## Overview
 
 ### The challenge
 
@@ -28,11 +25,10 @@ Users should be able to:
 - See the current day’s bar highlighted in a different colour to the other bars
 - View the optimal layout for the content depending on their device’s screen size
 - See hover states for all interactive elements on the page
-- **Bonus**: Use the JSON data file provided to dynamically size the bars on the chart
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![finalDesign.png](./images/finalDesign.png)
 
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
