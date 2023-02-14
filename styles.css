@@ -81,6 +81,7 @@ body{
     color: var(--Medium-brown);
 }
 .column{
+    position: relative;
     cursor: pointer;
     background-color: var(--Soft-red);
     width:40px;
@@ -90,12 +91,29 @@ body{
 .column:hover{
     background-color: var(--Cyan);
 }
+.column:hover .columnData{
+    display: flex;
+}
 .todayCol{
     background-color: var(--Cyan) !important;
 }
 .todayCol:hover{
     background-color: var(--Light-Cyan) !important;
 }
+.columnData{
+    position: absolute;
+    top:-30px;
+    left: -2px;
+    color: var(--Very-pale-orange);
+    background-color: var(--Dark-brown);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height:25px;
+    width: 45px;
+    border-radius: 3px;
+}
+
 .main__chart h2{
     color: var(--Dark-brown);
     font-weight: var(--big-weight);

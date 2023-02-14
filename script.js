@@ -9,9 +9,14 @@ var chart = document.getElementById('chart');
         let div = document.createElement('div');
         div.classList.add('column')
         div.style.height = `${data[i]['amount']*2}px`;
+        let area = document.createElement('div');
+        area.classList.add('columnData');
+        let text = document.createElement('p');
+        text.textContent = `${data[i]['amount']}`;
+        area.append(text);
+        div.append(area);
         let now = new Date();
         now = now.toString().substring(0,3).toLowerCase();
-        console.log(now)
         if(data[i]['day'] === now){
             div.classList.add('todayCol')
         }
